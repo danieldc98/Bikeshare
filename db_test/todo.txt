@@ -1,0 +1,16 @@
+1. populate DB with data
+2. python manage.py shell explore models/objects and check for validity
+3. exploring views
+4. Come up with questions
+5. Begin design of website - explore personally created or free templates online
+6. Explore docs.djangoproject.com/en/1.8/intro/tutorial03/
+7. What are the questions you want to answer about this dataset?
+8. Add notes to presentation
+
+to launch web server open to apl network: python manage.py runserver 10.109.26.175:8000  then goto web browser and type decasdr1-ld1:8000
+
+Convert destinations to url type slugs.
+String -> for every space, convert to +, convert & to %26
+Append ',Chicago'
+Append to http google api url
+Send url, receive json, parse to view on webpage

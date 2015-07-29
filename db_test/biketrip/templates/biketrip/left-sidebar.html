@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+
+{% load staticfiles %}
+<html>
+	<head>
+		<title>Bikeshare Data</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="{% static 'biketrip/css/ie/html5shiv.js"></script><![endif]-->
+		<script src="{% static 'biketrip/js/jquery.min.js' %}"></script>
+		<script src="{% static 'biketrip/js/jquery.dropotron.min.js' %}"></script>
+		<script src="{% static 'biketrip/js/skel.min.js' %}"></script>
+		<script src="{% static 'biketrip/js/skel-layers.min.js' %}"></script>
+		<script src="{% static 'biketrip/js/init.js' %}"></script>
+		<!--<noscript>--!>
+			<link rel="stylesheet" href="{% static 'biketrip/css/skel.css' %}" />
+			<link rel="stylesheet" href="{% static 'biketrip/css/style.css' %}" />
+		<!--</noscript>--!>
+		<!--[if lte IE 8]><link rel="stylesheet" href="{% static 'biketrip/css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+
+		<!-- Header Wrapper -->
+			<div class="wrapper style1">
+			
+			<!-- Header -->
+				<div id="header">
+					<div class="container">
+							
+						<!-- Logo -->
+							<h2><a href="#" id="logo">The Data</a></h1>
+						
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li class="active"><a href="home">Home</a></li>
+									<li><a href="data">Data</a></li>
+								</ul>
+							</nav>
+	
+					</div>
+				</div>
+				
+			<!-- Banner -->
+				<div id="banner">
+					<section class="container">
+						<h2>The Data</h2>
+					</section>
+				</div>
+
+			</div>
+		
+		<!--<!-- Section One --
+			<div class="wrapper style2">
+				<section class="container">
+					<div class="row double">
+						<div class="6u">
+							<header class="major">
+								<h2>Project Objectives</h2>
+									<ul style ="list-style-type:square">
+										<li>Establish tables to model data</li>
+										<li>Turn raw data downloaded from internet into usable models</li>
+
+										<li>Create a modern, locally-accessible website to display database data</li>
+									</ul>
+							</header>
+						</div>
+						<div class="6u">
+							<h3>About Daniel</h3>
+							<p>Daniel is a rising high-school senior at St. Albans School in Washington DC.  He is interested in computer science, especially data management, and hopes to study it further.  He is also the head lighting designer for his school plays and a two-sport varsity athlete.</p>
+							<a href="#" class="button">More about Daniel</a>
+						</div>
+					</div>
+				</section>
+			</div>
+
+		<!-- Section Two --
+			<div class="wrapper style3">
+				<section class="container">
+					<header class="major">
+						<h2>Approach</h2>
+					</header>
+
+						<ol type="1">
+							<li></li>
+							<li>Turn raw data downloaded from internet into usable models</li>
+							<li>Create a modern, locally-accessible website to display database data</li>
+						</ol>
+				</section>
+			</div>-->
+
+		<!-- Section Three -->
+			<div class="wrapper style4">
+				<section class="container">
+					<header class="major">
+						<span class="byline">From analyzing over 360,000 trips,</span>
+						<span class="byline"> </span>
+						<h2>Bikeshare Riders Are:</h2>
+					</header>
+					<div class="row flush">
+						<div class="4u">
+							<ul>
+								<li>
+									<h3>Male</h3>
+									<p>Of users who reported gender, {{ male_percent }}% were male</p>
+								</li>
+								<li>
+									<h3>Female</h3>
+									<p>Of users who reported gender, {{female_percent}}% were female</p>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="4u">
+							<ul>
+								<li>
+									<h3>Gen Xers</h3>
+									<p>The average bikeshare user was {{ avg_age }}</p>
+								</li>
+								<li>
+									<h3>Old</h3>
+									<p>The oldest reported age of a rider was {{oldest_age}}</p>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="4u">
+							<ul>
+								<li>
+									<h3>Tourists</h3>
+									<p>{{tourist_percent}}% of all trips took at least 45 minutes longer than expected by Google Maps</p>
+								</li>
+								<li>
+									<h3>Fast</h3>
+									<p>{{fast_percent}}% of trips were completed at least 10 minutes faster than predicted by Google Maps
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div>
+		
+		<!-- Team -->
+			<div class="wrapper style5">
+				<section id="team" class="container">
+					<header class="major">
+						<h2>Thanks to</h2>
+					</header>
+					<div class="row">
+						<div class="4u">
+							<h3>Francisco Serna</h3>
+						</div>
+						<div class="4u">
+							<h3>Cyndi Utterback</h3>
+						</div>
+						<div class="4u">
+							<h3>Tracey Dear</h3>
+					</div>
+				</section>
+			</div>
+
+	<!-- Footer -->
+		<div id="footer">
+			<section class="container">
+				<header class="major">
+					<h2>Connect with me</h2>
+				</header>
+				<ul class="icons">
+					<li class="active"><a href="#" class="fa fa-facebook"><span></span></a></li>
+					<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
+					<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
+					<li><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li>
+				</ul>
+				<hr />
+			</section>
+		</div>
+
+	</body>
+</html>

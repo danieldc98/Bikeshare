@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+
+{% load staticfiles %}
+<html>
+	<head>
+		<title>Analyzing Chicago Bikeshare Data</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="{% static 'biketrip/css/ie/html5shiv.js"></script><![endif]-->
+		<script src="{% static 'biketrip/js/jquery.min.js' %}"></script>
+		<script src="{% static 'biketrip/js/jquery.dropotron.min.js' %}"></script>
+		<script src="{% static 'biketrip/js/skel.min.js' %}"></script>
+		<script src="{% static 'biketrip/js/skel-layers.min.js' %}"></script>
+		<script src="{% static 'biketrip/js/init.js' %}"></script>
+		<!--<noscript>--!>
+			<link rel="stylesheet" href="{% static 'biketrip/css/skel.css' %}" />
+			<link rel="stylesheet" href="{% static 'biketrip/css/style.css' %}" />
+		<!--</noscript>--!>
+		<!--[if lte IE 8]><link rel="stylesheet" href="{% static 'biketrip/css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+
+		<!-- Header Wrapper -->
+			<div class="wrapper style1">
+			
+			<!-- Header -->
+				<div id="header">
+					<div class="container">
+							
+						<!-- Logo -->
+							<h2><a href="#" id="logo">Chicago Bikeshare Data</a></h1>
+						
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li class="active"><a href="home">Home</a></li>
+									<li><a href="data">Data</a></li>
+								</ul>
+							</nav>
+	
+					</div>
+				</div>
+				
+			<!-- Banner -->
+				<div id="banner">
+					<section class="container">
+						<h2>Analyzing Chicago Bikeshare Data</h2>
+					</section>
+				</div>
+
+			</div>
+		
+		<!-- Section One -->
+			<div class="wrapper style2">
+				<section class="container">
+					<div class="row double">
+						<div class="6u">
+							<header class="major">
+								<h2 style="color:#33CCFF">Project Objectives</h2>
+									<ul style ="list-style-type:square">
+										<li>To learn about</li>
+											<ul>
+												<li>-Relational databases and creating models from a dataset</li>
+												<li>-Django, a Python web framework, that uses a model-view-controller design pattern for data-driven websites</li>
+												<li>-Customizing web templates using HTML and CSS</li>
+											</ul>
+										<li>Solve a problem and implement a solution using a dataset</li>
+
+										<li>Explore a dataset and implement a full-stack development environment (Databases, web framework, and front-end web design)</li>
+										<li>Report statistical findings on a modern, locally-hosted website</li>
+									</ul>
+							</header>
+						</div>
+						<div class="6u">
+							<h3 style="color:#33CCFF">Approach</h3>
+								<ul style = "list-style-type:square">
+								<li>Download data for 368,371 bike trips as Comma-Separated-Values (csv)</li>
+								<li>Write Python script to convert dataset into Django models</li>
+								<li>Use Django, a high-level Python Web framework, to query and display data</li>
+								</ul>
+						</div>
+					</div>
+				</section>
+			</div>
+
+		
+			<div class="wrapper style3">
+				<section class="container">
+					<header class="major">
+						<h3>About Daniel</h3>
+					</header>
+						
+						<p style="size:2">Daniel is a rising high-school senior at St. Albans School in Washington DC.  He is interested in computer science, especially data management, and hopes to study it further.  He is also the head lighting designer for his school plays and a two-sport varsity athlete.</p>
+				</section>
+			</div>
+		<!-- Team -->
+			<div class="wrapper style5">
+				<section id="team" class="container">
+					<header class="major">
+						<h2>Thanks to</h2>
+					</header>
+					<div class="row">
+						<div class="4u">
+							<h3>Francisco Serna</h3>
+						</div>
+						<div class="4u">
+							<h3>Cyndi Utterback</h3>
+						</div>
+						<div class="4u">
+							<h3>Tracey Dear</h3>
+					</div>
+				</section>
+			</div>
+
+	<!-- Footer -->
+		<div id="footer">
+			<section class="container">
+				<header class="major">
+					<h2>Connect with me</h2>
+				</header>
+				<ul class="icons">
+					<li class="active"><a href="#" class="fa fa-facebook"><span></span></a></li>
+					<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
+					<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
+					<li><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li>
+				</ul>
+				<hr />
+			</section>
+		</div>
+
+	</body>
+</html>
